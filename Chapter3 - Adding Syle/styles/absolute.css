@@ -1,0 +1,30 @@
+/* Absolute lengths(exactly that size) vs Relative lengths(another length property for ex
+ 2em means 2 times the size of current font) */
+ html {
+    /* 1 em is the inherited font from the parent */
+    /* em stands for parent element and rem from root element (the parent of all parents) */
+    font-size: 2em;
+}
+p {
+    /* 2*4*16px(default value is 16px) */
+    font-size: 4em;
+}
+
+section {
+  /* absolute units */
+  width: 500px;
+  height: 500px;
+  background-color: teal;
+}
+
+/* relative lengths */
+/* %- relative to it s parent */
+/* the parent of div it s section,the parent of section - body , the parent of body is html, the parent of html is DOCTYPE... */
+/* if we don t have a height and length to the parent and us % is % of 0 so 0 */
+
+div {
+  /* so 10% is the parent background color */
+  width: 90%;
+  height: 80%;
+  background-color: red;
+}

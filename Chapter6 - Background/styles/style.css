@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+}
+div {
+  height: 100vh;
+  background-color: greenyellow;
+  /* can use remote or local url */
+  /* linear gradient means we can change position eg to left(bottom,right...) */
+  /* radial gradient is the same as linear but it s circle (and no to left/right) */
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 0, 0, 0.132),
+      rgba(177, 54, 23, 0.321),
+      rgba(181, 127, 9, 0.268)
+    ),
+    url("../images/img.jpg");
+  /* background-image: radial-gradient(
+      rgba(0, 128, 0, 0.389),
+      rgba(0, 0, 255, 0.332)
+    ),
+    url("../images/img.jpg"); */
+  /* some images can repeat itself (and we can choose how) */
+  /* repeat-x-repeta pe orizontala si repeat-y pe verticala */
+  background-repeat: no-repeat;
+  /* daca vrem sa modificam spatiul pe care l ocupa background-ul */
+  background-size: cover;
+  /* what part of the image is most shown */
+  background-position: bottom;
+  /* parallex effect (the images stays in the same spot even if we scroll) */
+  background-attachment: local;
+}

@@ -1,0 +1,75 @@
+/* the everything selector */
+* {
+  margin: 0px;
+}
+
+/* imi da toate elementele din sectiune(child elements) */
+section * {
+  margin: 22px;
+  border: 2px solid teal;
+}
+
+/* selector using class */
+
+.one {
+  color: fuchsia;
+}
+
+.two {
+  font-size: 4rem;
+}
+
+/* selector using id */
+#one {
+  color: aquamarine;
+}
+
+#two {
+  font-size: 4rem;
+}
+
+/* so we customize just the div with the class text */
+div.text {
+  font-size: 4rem;
+}
+
+/* selectam paragrafele din div*/
+
+div p {
+  color: crimson;
+}
+/* all p elemenets that have a div parent */
+div > p {
+  margin: 0px;
+}
+
+/* selecteaza primul element p ce urmeaza imediat dupa div */
+div + p {
+  margin: 0px;
+}
+
+/* selecteaza atributul href cu denumirea de one ind anchor tag */
+a[href="one"] {
+  color: orange;
+}
+
+/* Pseudo selectors */
+
+/* :link selecteaza toate link-urile nevizitate */
+.link:link {
+  color: red;
+}
+
+/* :visited selecteaza toate link-utile vizitate */
+.visited:visited {
+  color: orange;
+}
+
+/* cand dai cu mouse-ul peste un element din pagina */
+.hover:hover {
+  color: brown;
+}
+
+.active:active{
+    color: greenyellow;
+}

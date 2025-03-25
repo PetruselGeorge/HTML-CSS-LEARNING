@@ -1,0 +1,24 @@
+html {
+  font-size: 16px;
+}
+
+section {
+  font-size: 2em;
+}
+
+/* so it doubles the root parent size = 32px */
+p {
+  font-size: 2rem;
+}
+
+
+/* vw = relative to 1% of the viewport(vizible zone of the web page) width 
+    vh is the height*/
+
+div {
+    background-color: teal;
+    /* 100% of the viewport width */
+    width: 100vw;
+    /* 20% of the viewport height */
+    height: 50vh;
+}

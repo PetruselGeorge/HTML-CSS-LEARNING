@@ -1,0 +1,18 @@
+/* a block element will take the entire width and just the necessary height*/
+/* display: none face elementul invizibil si-l face sa nu mai ocupe spatiu */
+div {
+  background-color: cyan;
+  width: 400px;
+  height: 200px;
+}
+
+/* on an inline element the heigh adn width will have no effect */
+/* an inline elements will just take the space for the content */
+span {
+  background-color: crimson;
+  width: 200px;
+  height: 200px;
+  /* it s by default inline */
+  /* now it s using the width and height */
+  display: inline-block;
+}

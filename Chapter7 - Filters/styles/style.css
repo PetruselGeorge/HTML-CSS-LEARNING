@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+}
+
+/* div-ul in css se numeste selector */
+div {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1601191905893-d270babd8c87?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  /* blur is a function that takes the nr of pixels */
+  /* filter: blur(100px); */
+  /* filter: brightness(50%) */
+  /* filter: contrast(130%) */
+  /* filter: grayscale(60%); */
+  /* filter: saturate(100%) */
+  
+}

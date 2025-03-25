@@ -1,0 +1,27 @@
+h1 {
+  /* Using the color name */
+  color: white;
+  /* to change the backgorund color */
+  /* background vs background-color */
+  /* background poti seta intr-o linie de cod imaginea de fundal pozitia etc */
+  /* background-color doar culoarea fundalului */
+  background-color: teal;
+}
+
+h2 {
+  /* Using the rgb max value for each:255 */
+  /* color: rgb(40, 99, 160); */
+  /* a = alpha transparancy (DOUBLE: min=0.0 max=1.0 - how transparent) */
+  color: rgba(255, 0, 0, 0.3);
+}
+
+h3 {
+  /* Using the hex values #RRGGBB(16^1*15+16^0*15(16^1*F + 16^0*F)) */
+  color: #3cb371;
+  /* color: #ff0000;  */
+}
+h4 {
+    /* hue saturaion lightness */
+    color: hsl(142, 74%, 44%);
+}
+

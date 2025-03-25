@@ -1,0 +1,38 @@
+/* fonts-google is where you can find fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+    /* it s the look and feel of the font default is serif */
+    font-family: sans-serif;
+    /* size of the font */
+    font-size: 20px;
+    /* changes the cases of our font */
+    text-transform: uppercase;
+    /* the space between the lines */
+    line-height: 2em;
+    /* spacing between letters */
+    letter-spacing: 10px;
+    /* spacing between words */
+    word-spacing: 10px;
+    /* text alignment (starts from left or center or right) */
+    text-align: center;
+    /* text decoration (adds different decorations
+    like under or overline or a line-through)*/
+    /* text-decoration:none can be usefull for ancor tags */
+    text-decoration: none;
+    /* changes the way the cursor looks when hovering
+    over */
+    cursor: copy;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    /* how thick the font is */
+    font-weight: 800;
+}
+h2 {
+    /* To render the font you must also copy the code for the css */
+    font-family:"Raleway", sans-serif;
+}

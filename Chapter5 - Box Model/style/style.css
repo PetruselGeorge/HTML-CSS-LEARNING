@@ -1,0 +1,42 @@
+/* Everything on a web page is made out of boxes */
+ /* 
+    Every box is made of 4 things:
+    1: content
+    2: padding
+    3: border
+    4: margin
+*/
+*{
+    margin:2vh;
+}
+html {
+    background-color: teal;
+}
+
+.box1 {
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: teal; */
+    /* short cut needs to be in the same order: */
+    /* border: 10px dotted teal; */
+    border-left: 2px solid red;
+    border-right: 4px solid teal;
+    border-bottom: 1px solid black;
+    border-top: 3px dotted fuchsia;
+}
+
+.box2 {
+    border: 2px solid black;
+    /* padding is the space between the text and the border 
+    10 px width and 20 height
+    */
+    /* padding: 10px 20px; */
+    padding: 10px 0px;
+    text-align: right;
+}
+.box3 {
+    /* margin is outside of the border */
+    border: 1px solid black;
+    margin: 20px;
+}
+
