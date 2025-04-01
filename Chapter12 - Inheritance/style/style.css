@@ -1,0 +1,55 @@
+/* CSS-Inheritance */
+
+/* Mostenirea este atunci cand declaram ceva pe un element,
+si se aplica si pe copii elementului*/
+/* Doar Typography-ul este mostenit e.g: */
+/* .parent {
+    font-size: large;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: orange;
+    text-shadow: 3px 3px 5px rgb(212, 15, 48)  ;
+
+
+} */
+/* Layout-ul nu poate fi mostenit e.g */
+/* .parent {
+    margin: 20px;
+    padding: 20px;
+    border:1px solid black;
+    box-shadow: 2px 2px 10px black;
+} */
+
+/* typography related is inherited */
+.parent2 {
+  color: orange;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: larger;
+  font-style: italic;
+  font-size: 2rem;
+  text-decoration: line-through;
+  /* those are layout properties */
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+}
+
+.children2 {
+  /* those are layout properties */
+  position: relative;
+  left: 100px;
+}
+/* The inherit keywod
+    o proprietate ar tebuie sa si mosteneasca valoare 
+    de la parinte
+    poate fi folosit pentru orice proprietate css
+    si pe orice element html
+    foloseste doar pentru chestii legate de typography
+*/
+
+.children2 {
+    /* those are layout properties */
+    background-color: inherit;
+    width: inherit;
+    height: inherit;
+  }

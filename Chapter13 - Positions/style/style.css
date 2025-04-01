@@ -1,0 +1,37 @@
+.container {
+  background-color: gray;
+  width: 90%;
+  height: 500px;
+}
+/* Default position is static(in a column) */
+.d {
+  width: 100px;
+  height: 100px;
+  position: static;
+}
+
+.relative {
+  background-color: crimson;
+  /* position: relative înseamnă că elementul stă pe loc în pagină,
+   dar poate fi mutat puțin (cu top, left, etc.) fără să afecteze celelalte elemente din jur.*/
+  position: relative;
+  left: 200px;
+}
+
+.absolute {
+  background-color: blue;
+  /* se muta cu tot cu spatiul
+  adica daca aveam 3 elemente in static(coloana) si facem un position absolute
+  is scoatem cu totul din coloana(mai este doar red si teal in static)
+  */
+  position: absolute;
+  left: 100px;
+}
+
+.fixed {
+  background-color: teal;
+  /* ramane constant in acelasi loc in viewport-ul paginii(
+  daca am da scroll ramane in aceeasi pozitie) */
+  position: fixed;
+  left:200px
+}

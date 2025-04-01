@@ -1,0 +1,23 @@
+/* Syntax for a shadow(box or text or any shadow): 
+        Provide values for x axis and y axis blurness and color */
+div {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 255, 0.589);
+  /* x value y value blurness color */
+  box-shadow: 20px 15px 2px black;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    text-shadow: 2px 2px 20px white;
+    box-shadow: 2px 2px 20px white;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border-style: hidden;
+}
