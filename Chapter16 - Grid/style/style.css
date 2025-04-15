@@ -1,0 +1,73 @@
+/* Css flex o sa ne lase sa folosimmodificari doar pe o 
+directie adica row sau column so no 2d layout
+*/
+
+/* 
+Css grid ne lasa sa facem modificari pe layout-uri 2d
+(row si colon)
+*/
+
+/* avem grid line care poate fi vertical sau orizontal */
+
+/* un grid track este spatiul dintre doua linii adiacente */
+
+/* un gird cell este aria care se afla intre cele 4 linii din 
+grid lines.h+v
+*/
+
+/* grid area este unul sau mai multe grid cells 1x1 2x2 3x3 3x2... */
+
+* {
+  margin: 0;
+}
+
+.container {
+  background-color: rgb(34, 34, 34);
+  padding: 20px;
+  height: 100vh;
+  /* Grid stuff here */
+  display: grid;
+  /* 3 coloane pe fiecare row a cate 100px */
+  /* prima data nr de col si dupa marimea
+        se poate fol si ptr rows.
+    */
+  /* 
+    fr=fractional unit= o partea din spatiul disponibil ramas intr-un grid
+        e.g.:grid-template-columns:1fr 1fr 2fr ulrima bucata 2x mai mare
+        decat primele doua
+    
+    */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* 3 row-uri pe fiecare coloana a cate 100px */
+  /* al doilea element din row nu se micsoreaza*/
+  grid-template-columns: 1fr minmax(200px, 1fr) 1fr;
+  grid-template-rows: 1fr 2fr;
+  /* spatierea dintre cell-uri */
+  gap: 10px;
+}
+
+header {
+  /* extinde coloana 1 pana la coloana 3*/
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+aside {
+  /* grid-column-start: 1;
+  grid-column-end: 3;
+  or grid-column: 1/3;
+  */
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+nav {
+  grid-row: 2/3;
+}
+
+.s {
+  padding: 20px;
+  background-color: rgb(84, 84, 84);
+  color: #fff;
+  text-align: center;
+}

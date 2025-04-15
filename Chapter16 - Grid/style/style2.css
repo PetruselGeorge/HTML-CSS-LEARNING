@@ -1,0 +1,55 @@
+* {
+  margin: 0px;
+}
+
+.container {
+  background-color: rgb(34, 34, 34);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* auto-fits the cells in the viewport depending on the size of the page */
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  padding: 20px;
+  /* justify-content: flex-end;
+  align-items: flex-end; */
+  /* spunem ca header-ul ocupa 4 coloane */
+  grid-template-areas: "h h h h"
+                       "s s m m"
+                       "a a m m"
+                       "f f f f";
+  
+}
+
+footer{
+    grid-area: f;
+}
+
+header {
+  /* grid-column:start/end; */
+  /* imi trece header-ul pe ultimul rand */
+    /* grid-row-start: -1; */
+    /* grid-column-start: -1; */
+    /* align-self:center; */
+    /* aplicam (daca sriam s aolo puneam la grid-area s) */
+    grid-area:h;
+}
+
+section{
+    grid-area: s;
+}
+
+main{
+    grid-area:m;
+}
+
+aside{
+    /* order:1; */
+    grid-area:a;
+}
+
+.s {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(84, 84, 84);
+}
